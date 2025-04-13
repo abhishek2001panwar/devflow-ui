@@ -1,8 +1,23 @@
+import { AiFillGoogleCircle } from "react-icons/ai";
+import { Card, Button } from "../lib/ui";
+import { FiSend } from "react-icons/fi";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-    
+    <div className="max-w-3xl mx-auto p-6 space-y-6">
+      <Card
+        companyName=""
+        companyLogo={<AiFillGoogleCircle />}
+        jobTitle="Graphic Designer"
+        jobTags={["Full-time", "Flexible schedule"]}
+        salary="$150 - 220k"
+        location="Mountain View, CA"
+        accentColor="#10b981"
+        primaryActionLabel="Apply now"
+      />
+      <Button variant="gradient" size="md" icon={<FiSend />}>
+        Hello
+      </Button>
     </div>
   );
 }

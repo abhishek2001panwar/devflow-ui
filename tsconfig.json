@@ -32,7 +32,7 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     ".next/types/**/*.ts",
-    "./node_modules/devflow-ui/**/*.{js,ts,jsx,tsx}"
+   
   ],
   "exclude": [
     "node_modules"

@@ -6,8 +6,7 @@
       "declarationDir": "dist",
       "emitDeclarationOnly": false
     },
-    "include": ["src/lib/ui/**/*" , "src/lib/ui/**/*.ts", "src/lib/ui/**/*.tsx" ,
-    "./node_modules/devflow-ui/**/*.{js,ts,jsx,tsx}"
+    "include": ["src/lib/ui/**/*" , "src/lib/ui/**/*.ts", "src/lib/ui/**/*.tsx" 
 ],
     
   }

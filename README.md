@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Here’s a clean and professional `README.md` you can use for your **devflow-ui** component library. It includes setup instructions, usage examples, and development notes:
 
-## Getting Started
+---
 
-First, run the development server:
+```md
+# 🧩 Devflow UI
+
+A lightweight and reusable component library built with **React** and **Tailwind CSS**, designed to speed up UI development across Devflow projects.
+
+## ✨ Features
+
+- ⚛️ Built with React 19+
+- 🎨 Styled using Tailwind CSS 4
+- ⚡️ Bundled with tsup (ESM + CJS)
+- 📦 TypeScript support with `.d.ts` typings
+- 🛠 Easy to develop and extend
+
+---
+
+## 🚀 Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# If published to npm
+npm install devflow-ui
+
+# OR for local development, link it
+cd devflow-ui
+npm link
+
+# In your consuming project
+npm link devflow-ui
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```tsx
+import { Button, Card } from 'devflow-ui';
 
-## Learn More
+export default function App() {
+  return (
+    <div className="p-4">
+      <Card>
+        <Button variant="primary" onClick={() => alert('Hello!')}>
+          Click Me
+        </Button>
+      </Card>
+    </div>
+  );
+}
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠 Local Development
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To test locally:
 
-## Deploy on Vercel
+1. Build the library:
+   ```bash
+   npm run build:ui
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Link the package:
+   ```bash
+   npm link
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Link it in your consuming project:
+   ```bash
+   npm link devflow-ui
+   ```
+
+4. Restart your dev server in the consuming app (e.g., Next.js).
+
+---
+
+## 📂 Project Structure
+
+```
+devflow-ui/
+│
+├── src/
+│   └── lib/
+│       └── ui/
+│           ├── Button.tsx
+│           ├── Card.tsx
+│           └── index.ts     # Exports all components
+│
+├── dist/                    # Output directory from build
+├── package.json
+└── tsconfig.json
+```
+
+---
+
+## 🔧 Scripts
+
+- `npm run build:ui` - Build the component library (ESM + CJS + types)
+- `npm run dev` - Start Next.js dev server for previewing
+- `npm run lint` - Lint the code
+- `npm version patch/minor/major` - Bump version
+
+---
+
+## 📤 Publishing (Optional)
+
+```bash
+# Automatically builds and publishes with new version
+npm version patch    # or minor / major
+npm publish
+```
+
+Make sure to:
+- Update the version before each publish.
+- The `dist/` directory is included in `files`.
+
+---
+
+## 📃 License
+
+MIT © [Your Name]
+```
+
+---
+
+Let me know if you'd like it tailored to a monorepo setup or include badges (like version, license, etc.).

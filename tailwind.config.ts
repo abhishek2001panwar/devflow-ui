@@ -1,12 +1,11 @@
+import path from "path";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
-      './src/**/*.{js,ts,jsx,tsx}',
-        './src/lib/ui/**/*.{js,ts,jsx,tsx}',
-        './src/components/**/*.{js,ts,jsx,tsx}',
-        './src/docs/**/*.{js,ts,jsx,tsx}',
-      './node_modules/devflow-ui/**/*.{js,ts,jsx,tsx}', // 👈 This is important!
-    ],
+        './src/**/*.{js,ts,jsx,tsx}',
+        path.join(__dirname, '../devflow-ui/src/**/*.{js,ts,jsx,tsx}'), // use path.join for safety
+      ],
     theme: {
       extend: {},
     },

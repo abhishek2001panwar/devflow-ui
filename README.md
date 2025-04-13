@@ -109,7 +109,7 @@ devflow-ui/
 ```bash
 # Automatically builds and publishes with new version
 npm version patch    # or minor / major
-npm publish
+npm publish --access public
 ```
 
 Make sure to:

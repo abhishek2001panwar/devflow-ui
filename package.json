@@ -4,7 +4,7 @@
   "main": "src/lib/ui/index.ts",
   "types": "src/lib/ui/index.ts",
   "files": [
-    "dist"
+    "src"
   ],
   "scripts": {
     "build:ui": "tsup src/lib/ui/index.ts --dts --format esm,cjs --out-dir dist",

@@ -53,13 +53,13 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 ));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// src/lib/ui/index.ts
-var ui_exports = {};
-__export(ui_exports, {
+// src/index.ts
+var src_exports = {};
+__export(src_exports, {
   Button: () => Button,
   Card: () => Card
 });
-module.exports = __toCommonJS(ui_exports);
+module.exports = __toCommonJS(src_exports);
 
 // src/lib/ui/Button.tsx
 var import_react = __toESM(require("react"));

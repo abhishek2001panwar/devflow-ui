@@ -1,13 +1,13 @@
+import type { Config } from 'tailwindcss'
 
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-    content: [
-        './src/**/*.{js,ts,jsx,tsx}',
-        './node_modules/devflow-ui/**/*.{js,ts,jsx,tsx}', // use path.join for safety
-      ],
-    theme: {
-      extend: {},
-    },
-    plugins: [],
-  }
-  
+const config: Config = {
+  content: [
+    './src/**/*.{js,ts,jsx,tsx}',
+    './node_modules/devflow-ui/**/*.{js,ts,jsx,tsx}' // ✅ This is important
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+export default config

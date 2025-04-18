@@ -31,4 +31,4 @@ type JobCardProps = {
 };
 declare const Card: ({ companyName, companyLogo, postedTime, jobTitle, jobTags, salary, location, primaryActionLabel, primaryActionHref, isSaved, className, tagClassName, titleClassName, }: JobCardProps) => React.JSX.Element;
 
-export { Button, Card };
+export { Button, ButtonProps, Card, JobCardProps };

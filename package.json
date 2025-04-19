@@ -6,18 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "build:ui": "cd src/packages/devflow-ui && npm run build",
-    "dev:ui": "cd src/packages/devflow-ui && npm run dev",
-    "link:ui": "cd src/packages/devflow-ui && npm link && cd ../../../ && npm link devflow-ui"
+    "lint": "next lint" 
   },
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.1",
-    "devflow-ui": "file:src/packages/devflow-ui",
-    "react-syntax-highlighter": "^15.5.0",
-    "lucide-react": "^0.263.1"
+    "next": "15.3.1"
   },
   "devDependencies": {
     "typescript": "^5",

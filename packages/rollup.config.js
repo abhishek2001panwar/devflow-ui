@@ -14,5 +14,6 @@ export default defineConfig({
         typescript({
             tsconfig: "tsconfig.json"
         }),
+        
     ],
 })

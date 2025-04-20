@@ -2,6 +2,7 @@ import typescript from "@rollup/plugin-typescript";
 import { defineConfig } from "rollup";
 
 
+
 export default defineConfig({
     input: "src/index.ts",
     output: {
@@ -9,10 +10,9 @@ export default defineConfig({
         format: "es",
         name: "devflow-ui"    
     },
-
-    external: ["react", "react-dom"],
-    plugins: [typescript({
-        tsconfig: "tsconfig.json",
-        
-    })],
+    plugins: [
+        typescript({
+            tsconfig: "tsconfig.json"
+        }),
+    ],
 })

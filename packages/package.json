@@ -1,0 +1,26 @@
+{
+  "name": "devflow-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npx rollup -c"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "rollup": "^4.40.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tailwindcss": "^4.1.4",
+    "tslib": "^2.8.1"
+  }
+}
